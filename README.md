@@ -1,17 +1,12 @@
-> Why do I have a folder named ".expo" in my project?
+What is word analyzer?
 
-The ".expo" folder is created when an Expo project is started using "expo start" command.
+A Word Analyzer analyzes any word and determine number of consonants and vowels. You need to develop a simple React Native mobile application that analyzes any word given by a user.
 
-> What does the "packager-info.json" file contain?
+Steps:
+1. User type their input (it can be word or sentence)
+2. Because i use string.replace(/ /g, "").length, the appl will count the total character from the input and ignore the blank space.
+3. Beside, by using string.match(/[aeiou]/gi), this app also will check whether the input is match with the vowel letter array and count total vowel letters and return it.
+4. The total letter of consonant will then be calculated by subtracting the total letter of vowel from the total character of input.
 
-The "packager-info.json" file contains port numbers and process PIDs that are used to serve the application to the mobile device/simulator.
-
-> What does the "settings.json" file contain?
-
-The "settings.json" file contains the server configuration that is used to serve the application manifest.
-
-> Should I commit the ".expo" folder?
-
-No, you should not share the ".expo" folder. It does not contain any information that is relevant for other developers working on the project, it is specific to your machine.
-
-Upon project creation, the ".expo" folder is already added to your ".gitignore" file.
+Result:
+<img width="308" alt="result" src="https://user-images.githubusercontent.com/93121632/141682182-c1c74310-fad9-4432-a786-26d71facb47c.png">
